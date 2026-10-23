@@ -292,6 +292,61 @@ ul {
   white-space: nowrap;
 }
 
+/* ---------- Contacto ---------- */
+.contact {
+  padding: 4rem 1rem;
+  scroll-margin-top: var(--altura-header);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.contact__info {
+  font-style: normal;
+  display: grid;
+  gap: 1.5rem;
+  align-content: center;
+}
+
+.contact__label {
+  color: var(--color-acento);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
+.contact__item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.contact__item a:hover {
+  color: var(--color-acento);
+}
+
+.contact__map iframe {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: 0;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+
+  .contact__map iframe {
+    height: 400px;
+  }
+}
+
 /* ---------- Escritorio ---------- */
 @media (min-width: 768px) {
   .menu-toggle {
